@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiahChat</title>
+    <link rel="stylesheet" href="social.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                  <li><h1>SiahChat</h1></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#messages">Messages</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Feed Section -->
+        <section class="main-content">
+            <!-- Post Section -->
+            <div class="post-box">
+                <div class="profile-info">
+                    <img src="shadow.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="user-info">
+                        <h4>Jesiah</h4>
+                        <p>@jesiah</p>
+                    </div>
+                </div>
+                <textarea placeholder="What's on your mind?" id="post-text"></textarea>
+                <div class="post-options">
+                    <input type="file" id="file-input" multiple accept="image/*, video/*">
+                    <button id="post-button">Post</button>
+                </div>
+            </div>
+
+            <!-- Feed Section -->
+            <div class="feed" id="feed"></div>
+        </section>
+    </div>
+
+
+    <script src="social.js"></script>
+</body>
+</html>
+
